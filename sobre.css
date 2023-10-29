@@ -1,0 +1,86 @@
+.text-white, p, span{
+  font-family: 'Lora';}
+  
+body{
+    background-color:#761a1a ;
+   
+   }
+
+   #neubar {
+    background: #596e79;
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+  }
+  
+  .nav-item .active {
+    border-radius: 6px;
+    background: linear-gradient(145deg, #761a1a, #761a1a);
+    box-shadow:  4px 4px 8px #3a4750,
+                 -4px -4px 8px #3a4750;
+  }
+  
+  #neubar .nav-item {
+    margin : auto 4px;
+  }
+  #neubar a {
+  
+    padding-left:12px;
+    padding-right:12px;
+  }
+ 
+  a.navbar-brand {
+    color: #454545
+  }
+    
+.text-white, p{
+    font-family: 'Lora';
+}
+
+
+.card{
+    border:none;
+    margin-bottom: 50px;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:grey;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:15px;
+}
+
+
+
